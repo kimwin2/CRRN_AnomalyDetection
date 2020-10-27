@@ -26,8 +26,8 @@ python3 2_test_model.py --batch_size 5 --gpu_ids 0 --mode ConvConjLSTM
 * core_module/ConvLSTM.py: This code is a convolutional LSTM structure.
 
 ## cstm(convolutional spatio-temporal memory) example code
-* location of cstm: model/core_module/ConvConjLSTM.py
-* code example
+* Location of cstm: model/core_module/ConvConjLSTM.py
+* Code example
 ```
 from model.core_module.ConvConjLSTM import ConvConjLSTM as ConvLSTM
 
@@ -105,7 +105,7 @@ class wrapper_class(nn.Module):
 
 		return hidden, attns 
 ```
-* detailed code and information : model/ConvRRN.py
+* Detailed code and information : model/ConvRRN.py
 
 ## paper
 
