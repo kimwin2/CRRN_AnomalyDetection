@@ -6,14 +6,12 @@
 ## Usage
 * Clone this repo:
 ```git clone https://github.com/kimwin2/CRRN_AnomalyDetection.git```
-
 * For training: 
 ```
 python3 0_preprocessing.py
 python3 1_train.py --batch_size 5 --gpu_ids 0 --mode ConvConjLSTM
 ```
 * For testing: 
-
 ```
 python3 2_test_model.py --batch_size 5 --gpu_ids 0 --mode ConvConjLSTM
 ```
@@ -28,7 +26,7 @@ python3 2_test_model.py --batch_size 5 --gpu_ids 0 --mode ConvConjLSTM
 * core_module/ConvLSTM.py: This code is a convolutional LSTM structure.
 
 
-# paper
+## paper
 
 Y.-H. Yoo, U.-H. Kim and J.-H. Kim, "Convolutional Recurrent Reconstructive Network for Spatiotemporal Anomaly Detection in Solder Paste Inspection," IEEE Trans. on Cybernetics, Accepted, Oct. 2020.
 
