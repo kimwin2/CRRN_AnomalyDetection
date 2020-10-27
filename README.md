@@ -17,7 +17,7 @@ python3 2_test_model.py --batch_size 5 --gpu_ids 0 --mode ConvConjLSTM
 ```
 
 
-## network files
+## Network files
 
 * ConvRRN.py: It is a wrapper class that adds functional things to use cstm.
 * SpatialAttention.py: This code is for spatial attention in the encoder-decoder structure.
@@ -25,7 +25,7 @@ python3 2_test_model.py --batch_size 5 --gpu_ids 0 --mode ConvConjLSTM
 * core_module/ConvSTLSTM.py: This code is a convolutional spatio-temporal LSTM structure.
 * core_module/ConvLSTM.py: This code is a convolutional LSTM structure.
 
-## cstm(convolutional spatio-temporal memory) example code
+## CSTM(convolutional spatio-temporal memory) example code
 * Location of cstm: model/core_module/ConvConjLSTM.py
 * Code example
 ```
@@ -108,7 +108,7 @@ class wrapper_class(nn.Module):
 ```
 * Detailed code and information : model/ConvRRN.py
 
-## paper
+## Paper
 
 Y.-H. Yoo, U.-H. Kim and J.-H. Kim, "Convolutional Recurrent Reconstructive Network for Spatiotemporal Anomaly Detection in Solder Paste Inspection," IEEE Trans. on Cybernetics, Accepted, Oct. 2020.
 
