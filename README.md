@@ -33,15 +33,16 @@ from model.core_module.ConvConjLSTM import ConvConjLSTM as ConvLSTM
 
 class StackedConvLSTM(nn.Module):
 	def __init__(self, mode, channel, kernel, n_layers, is_attn=False): 
-    self.channel = channel 
+		super(StackedConvLSTM, self).__init__() 
+		self.channel = channel 
 		self.kernel = kernel
 		self.n_layers = n_layers 
 		self.is_attn = is_attn	
-    
-    conv_lstm = [ConvLSTM(channel, kernel, 2)]
-    for _ in range(1, n_layers):
-      conv_lstm.append(ConvLSTM(channel, kernel))  
-    self.conv_lstm = nn.Sequential(*conv_lstm) 
+
+		conv_lstm = [ConvLSTM(channel, kernel, 2)]
+		for _ in range(1, n_layers):
+			conv_lstm.append(ConvLSTM(channel, kernel))  
+		self.conv_lstm = nn.Sequential(*conv_lstm) 
 
 	def forward(self, inputs, hiddens=None): 
 		steps = inputs.size(1)
